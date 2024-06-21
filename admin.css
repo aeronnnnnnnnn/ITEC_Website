@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.whole {
+  overflow: hidden;
+  background-color: greenyellow;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: rgba(255, 0, 0, 0.663);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  position: sticky;
+  top: 0;
+}
+
+.left {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left h1 {
+  position: absolute;
+  left: 100px;
+}
+.right {
+  width: 50%;
+}
+.right ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.addProd {
+  background-color: aqua;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -50%;
+  width: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px 0px 0px 20px;
+  transition: 0.5s ease-in-out;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.addProd .close {
+  cursor: pointer;
+  background-color: #00000074;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 100%;
+}
